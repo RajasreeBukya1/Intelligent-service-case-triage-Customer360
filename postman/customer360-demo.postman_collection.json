@@ -1,0 +1,18 @@
+{
+  "info": {"name": "Customer 360 Demo API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "item": [
+    {
+      "name": "Mock Customer Profile",
+      "request": {
+        "method": "GET",
+        "header": [{"key":"Accept","value":"application/json"}],
+        "url": {"raw":"https://example.invalid/api/customer/CUST-1001","protocol":"https","host":["example","invalid"],"path":["api","customer","CUST-1001"]}
+      },
+      "response": [{
+        "name":"Example Response",
+        "originalRequest": {"method":"GET","header":[],"url":{"raw":"https://example.invalid/api/customer/CUST-1001","protocol":"https","host":["example","invalid"],"path":["api","customer","CUST-1001"]}},
+        "status":"OK","code":200,"body":"{\n  \"externalCustomerId\": \"CUST-1001\",\n  \"lifetimeValue\": 12345.67,\n  \"openCaseCount\": 2,\n  \"recentOrderCount\": 4,\n  \"churnRisk\": 0.33,\n  \"preferredChannel\": \"Email\",\n  \"unifiedProfileId\": \"UP-1001\"\n}"
+      }]
+    }
+  ]
+}
